@@ -193,9 +193,9 @@ all_reviews.each do |review|
   ratings[rating] += 1
 end
 
-puts '\n====================================================='
+puts "\n====================================================="
 puts '                     Ratings:'
-puts '=====================================================\n'
+puts "=====================================================\n"
 
 ratings.delete_at(0)
 ratings.each_with_index do |count, index|
@@ -203,9 +203,9 @@ ratings.each_with_index do |count, index|
   puts "#{rating}'s: #{count}"
 end
 
-puts '\n====================================================='
+puts "\n====================================================="
 puts '                     Countries:'
-puts '=====================================================\n'
-puts 'You have reviews from the followin countries:'
+puts "=====================================================\n"
+puts 'You have reviews from the following countries:'
 
 countries_with_reviews.each { |country| puts country }
